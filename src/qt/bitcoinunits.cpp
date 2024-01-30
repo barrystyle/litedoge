@@ -75,9 +75,9 @@ qint64 BitcoinUnits::factor(Unit unit)
 int BitcoinUnits::decimals(Unit unit)
 {
     switch (unit) {
-    case Unit::BTC: return 6;
-    case Unit::mBTC: return 3;
-    case Unit::uBTC: return 0;
+    case Unit::BTC: return 8;
+    case Unit::mBTC: return 5;
+    case Unit::uBTC: return 2;
     case Unit::SAT: return 0;
     } // no default case, so the compiler can warn about missing cases
     assert(false);
